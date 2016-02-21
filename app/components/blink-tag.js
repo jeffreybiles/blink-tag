@@ -1,13 +1,3 @@
-import Ember from 'ember';
+import BlinkTagComponent from "blink-tag/components/blink-tag";
 
-export default Ember.Component.extend({
-  tagName: 'h1',
-  show: true,
-  classNameBindings: ['show:ember:invisible'],
-  didInsertElement: function() {
-    var self = this;
-    setInterval(function() {
-       self.toggleProperty('show');
-    }, 300);
-  }
-});
+export default BlinkTagComponent
