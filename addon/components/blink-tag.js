@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   tagName: 'h1',
   show: true,
-  classNameBindings: ['show:ember:invisible'],
+  classNameBindings: ['show:ember:blink-tag--invisible'],
   didInsertElement: function() {
     var self = this;
     setInterval(function() {
